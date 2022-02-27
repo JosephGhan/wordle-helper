@@ -35,10 +35,6 @@
             this.txtGrn5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtYlw5 = new System.Windows.Forms.TextBox();
-            this.txtYlw4 = new System.Windows.Forms.TextBox();
-            this.txtYlw3 = new System.Windows.Forms.TextBox();
-            this.txtYlw2 = new System.Windows.Forms.TextBox();
             this.txtYlw1 = new System.Windows.Forms.TextBox();
             this.lstGss = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,6 +42,13 @@
             this.lblErr = new System.Windows.Forms.Label();
             this.txtBad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnRst = new System.Windows.Forms.Button();
+            this.txtYlw2 = new System.Windows.Forms.TextBox();
+            this.txtYlw3 = new System.Windows.Forms.TextBox();
+            this.txtYlw4 = new System.Windows.Forms.TextBox();
+            this.txtYlw5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtNmbr = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtGrn1
@@ -110,59 +113,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 65);
+            this.label2.Location = new System.Drawing.Point(281, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 15);
             this.label2.TabIndex = 11;
             this.label2.Text = "Yellow Letters";
             // 
-            // txtYlw5
-            // 
-            this.txtYlw5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtYlw5.Location = new System.Drawing.Point(430, 93);
-            this.txtYlw5.MaxLength = 1;
-            this.txtYlw5.Name = "txtYlw5";
-            this.txtYlw5.Size = new System.Drawing.Size(30, 23);
-            this.txtYlw5.TabIndex = 10;
-            this.txtYlw5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtYlw4
-            // 
-            this.txtYlw4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtYlw4.Location = new System.Drawing.Point(394, 93);
-            this.txtYlw4.MaxLength = 1;
-            this.txtYlw4.Name = "txtYlw4";
-            this.txtYlw4.Size = new System.Drawing.Size(30, 23);
-            this.txtYlw4.TabIndex = 9;
-            this.txtYlw4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtYlw3
-            // 
-            this.txtYlw3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtYlw3.Location = new System.Drawing.Point(358, 93);
-            this.txtYlw3.MaxLength = 1;
-            this.txtYlw3.Name = "txtYlw3";
-            this.txtYlw3.Size = new System.Drawing.Size(30, 23);
-            this.txtYlw3.TabIndex = 8;
-            this.txtYlw3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtYlw2
-            // 
-            this.txtYlw2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtYlw2.Location = new System.Drawing.Point(322, 93);
-            this.txtYlw2.MaxLength = 1;
-            this.txtYlw2.Name = "txtYlw2";
-            this.txtYlw2.Size = new System.Drawing.Size(30, 23);
-            this.txtYlw2.TabIndex = 7;
-            this.txtYlw2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // txtYlw1
             // 
             this.txtYlw1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtYlw1.Location = new System.Drawing.Point(286, 93);
-            this.txtYlw1.MaxLength = 1;
+            this.txtYlw1.Location = new System.Drawing.Point(281, 93);
+            this.txtYlw1.MaxLength = 5;
             this.txtYlw1.Name = "txtYlw1";
-            this.txtYlw1.Size = new System.Drawing.Size(30, 23);
+            this.txtYlw1.Size = new System.Drawing.Size(46, 23);
             this.txtYlw1.TabIndex = 6;
             this.txtYlw1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -170,7 +133,7 @@
             // 
             this.lstGss.FormattingEnabled = true;
             this.lstGss.ItemHeight = 15;
-            this.lstGss.Location = new System.Drawing.Point(178, 190);
+            this.lstGss.Location = new System.Drawing.Point(92, 208);
             this.lstGss.Name = "lstGss";
             this.lstGss.Size = new System.Drawing.Size(187, 214);
             this.lstGss.TabIndex = 12;
@@ -178,7 +141,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(178, 172);
+            this.label3.Location = new System.Drawing.Point(92, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 15);
             this.label3.TabIndex = 13;
@@ -187,7 +150,7 @@
             // btnGss
             // 
             this.btnGss.Enabled = false;
-            this.btnGss.Location = new System.Drawing.Point(241, 137);
+            this.btnGss.Location = new System.Drawing.Point(155, 155);
             this.btnGss.Name = "btnGss";
             this.btnGss.Size = new System.Drawing.Size(75, 23);
             this.btnGss.TabIndex = 14;
@@ -206,7 +169,7 @@
             // txtBad
             // 
             this.txtBad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtBad.Location = new System.Drawing.Point(394, 184);
+            this.txtBad.Location = new System.Drawing.Point(282, 148);
             this.txtBad.Name = "txtBad";
             this.txtBad.Size = new System.Drawing.Size(188, 23);
             this.txtBad.TabIndex = 16;
@@ -214,18 +177,91 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(393, 166);
+            this.label4.Location = new System.Drawing.Point(281, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 15);
             this.label4.TabIndex = 17;
             this.label4.Text = "Bad Letters";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            
+            // 
+            // btnRst
+            // 
+            this.btnRst.Location = new System.Drawing.Point(497, 37);
+            this.btnRst.Name = "btnRst";
+            this.btnRst.Size = new System.Drawing.Size(75, 23);
+            this.btnRst.TabIndex = 18;
+            this.btnRst.Text = "Reset";
+            this.btnRst.UseVisualStyleBackColor = true;
+            this.btnRst.Click += new System.EventHandler(this.btnRst_Click);
+            // 
+            // txtYlw2
+            // 
+            this.txtYlw2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtYlw2.Location = new System.Drawing.Point(333, 93);
+            this.txtYlw2.MaxLength = 5;
+            this.txtYlw2.Name = "txtYlw2";
+            this.txtYlw2.Size = new System.Drawing.Size(46, 23);
+            this.txtYlw2.TabIndex = 19;
+            this.txtYlw2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtYlw3
+            // 
+            this.txtYlw3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtYlw3.Location = new System.Drawing.Point(385, 93);
+            this.txtYlw3.MaxLength = 5;
+            this.txtYlw3.Name = "txtYlw3";
+            this.txtYlw3.Size = new System.Drawing.Size(46, 23);
+            this.txtYlw3.TabIndex = 20;
+            this.txtYlw3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtYlw4
+            // 
+            this.txtYlw4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtYlw4.Location = new System.Drawing.Point(437, 93);
+            this.txtYlw4.MaxLength = 5;
+            this.txtYlw4.Name = "txtYlw4";
+            this.txtYlw4.Size = new System.Drawing.Size(46, 23);
+            this.txtYlw4.TabIndex = 21;
+            this.txtYlw4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtYlw5
+            // 
+            this.txtYlw5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtYlw5.Location = new System.Drawing.Point(489, 93);
+            this.txtYlw5.MaxLength = 5;
+            this.txtYlw5.Name = "txtYlw5";
+            this.txtYlw5.Size = new System.Drawing.Size(46, 23);
+            this.txtYlw5.TabIndex = 22;
+            this.txtYlw5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(333, 208);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(126, 15);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "# of Words that match";
+            // 
+            // txtNmbr
+            // 
+            this.txtNmbr.Location = new System.Drawing.Point(327, 225);
+            this.txtNmbr.Name = "txtNmbr";
+            this.txtNmbr.Size = new System.Drawing.Size(128, 23);
+            this.txtNmbr.TabIndex = 24;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 450);
+            this.Controls.Add(this.txtNmbr);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtYlw5);
+            this.Controls.Add(this.txtYlw4);
+            this.Controls.Add(this.txtYlw3);
+            this.Controls.Add(this.txtYlw2);
+            this.Controls.Add(this.btnRst);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtBad);
             this.Controls.Add(this.lblErr);
@@ -233,10 +269,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lstGss);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtYlw5);
-            this.Controls.Add(this.txtYlw4);
-            this.Controls.Add(this.txtYlw3);
-            this.Controls.Add(this.txtYlw2);
             this.Controls.Add(this.txtYlw1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtGrn5);
@@ -260,10 +292,6 @@
         private TextBox txtGrn5;
         private Label label1;
         private Label label2;
-        private TextBox txtYlw5;
-        private TextBox txtYlw4;
-        private TextBox txtYlw3;
-        private TextBox txtYlw2;
         private TextBox txtYlw1;
         private ListBox lstGss;
         private Label label3;
@@ -271,5 +299,12 @@
         private Label lblErr;
         private TextBox txtBad;
         private Label label4;
+        private Button btnRst;
+        private TextBox txtYlw2;
+        private TextBox txtYlw3;
+        private TextBox txtYlw4;
+        private TextBox txtYlw5;
+        private Label label5;
+        private TextBox txtNmbr;
     }
 }
